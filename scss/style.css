@@ -1,0 +1,358 @@
+/*menu */
+@import url("https://fonts.googleapis.com/css?family=Varela+Round");
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+  letter-spacing: 1.1px;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  background: #000416;
+  font-family: "Varela Round", sans-serif;
+  
+}
+
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 570px;
+  margin: 0 auto;
+  height: 100px;
+  list-style: none;
+}
+
+.menu li {
+  width: 125px;
+  height: 50px;
+  transition: background-position-x 0.9s linear;
+  text-align: center;
+}
+.menu li a {
+  font-size: 17px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  transition: all 0.45s;
+}
+.menu li:hover {
+  background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB2ZXJzaW9uPSIxLjEi%0D%0AIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhs%0D%0AaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB3aWR0%0D%0AaD0iMzkwcHgiIGhlaWdodD0iNTBweCIgdmlld0JveD0iMCAwIDM5MCA1MCIgZW5hYmxlLWJhY2tn%0D%0Acm91bmQ9Im5ldyAwIDAgMzkwIDUwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHBhdGggZmlsbD0i%0D%0Abm9uZSIgc3Ryb2tlPSIjZDk0ZjVjIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLW1pdGVybGlt%0D%0AaXQ9IjEwIiBkPSJNMCw0Ny41ODVjMCwwLDk3LjUsMCwxMzAsMAoJYzEzLjc1LDAsMjguNzQtMzgu%0D%0ANzc4LDQ2LjE2OC0xOS40MTZDMTkyLjY2OSw0Ni41LDI0My42MDMsNDcuNTg1LDI2MCw0Ny41ODVj%0D%0AMzEuODIxLDAsMTMwLDAsMTMwLDAiLz4KPC9zdmc+Cg==");
+  -webkit-animation: line 1s;
+          animation: line 1s;
+}
+.menu li:hover a {
+  color: #d94f5c;
+}
+.menu li:not(:last-child) {
+  margin-right: 30px;
+}
+
+@-webkit-keyframes line {
+  0% {
+    background-position-x: 390px;
+  }
+}
+
+@keyframes line {
+  0% {
+    background-position-x: 390px;
+  }
+}
+  /*Promo*/
+
+
+
+/*Banner */
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto Condensed"), local("Roboto Condensed-Regular"), url(https://fonts.gstatic.com/s/Roboto Condensed/v4/jObgDQiPUtmACAaaK3pMG6CWcynf_cDxXwCLxiixG1c.ttf) format("truetype");
+}
+
+html, body {
+  margin: 0;
+  max-width: 100%; 
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container:hover > .section {
+  filter: brightness(22%);
+}
+
+.container:hover > .section:hover {
+  filter: brightness(100%);
+}
+
+.section {
+  transition: all 0.4s;
+  position: relative;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  text-align: center;
+  flex: 1;
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-position: center;
+}
+
+.cont_title {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  margin-top: 30vh;
+}
+
+.cont_title h1 {
+  text-transform: uppercase;
+  text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+  font-size: 3.5vw;
+  margin: 0;
+  vertical-align: middle;
+  color: white;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.cont_title h3 {
+  text-transform: uppercase;
+  font-size: 1.3vw;
+  color: white;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.cont_desc {
+  position: relative;
+  display: block;
+  text-align: center;
+  width: 60%;
+  height: auto;
+  margin: auto;
+  opacity: 0;
+  padding-top: 30px;
+}
+
+.cont_desc p {
+  margin: 0;
+  font-size: 20px;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: white;
+}
+
+.section:hover {
+  flex-grow: 1.8;
+  transition: flex 0.4s;
+}
+
+.section:hover > .cont_title h1 {
+  font-size: 5vw;
+  transition: font-size 0.4s;
+}
+
+.section:hover > .cont_title h3 {
+  font-size: 1.5vw;
+  transition: all 0.4s;
+}
+
+.section:hover > .cont_desc {
+  opacity: 1;
+  transition-delay: 0.5s;
+  transition: opacity 0.8s; 
+}
+
+.section:nth-child(1) {
+  background-image: url("https://i.pinimg.com/originals/f4/b2/a3/f4b2a363e55f9b11a06f29a2b0e8bff0.jpg");
+}
+
+.section:nth-child(2) {
+  background-image: url("https://krot.info/uploads/posts/2020-03/1585072224_32-p-krasnie-foni-dlya-steam-50.png");
+}
+
+.section:nth-child(3) {
+  background-image: url("https://storage.googleapis.com/kaggle-datasets-images/116555/278891/e6662651e0073c1d86393ca9c29e397e/dataset-card.jpg?t=2019-02-06-17-14-25");
+}
+
+.section:nth-child(4) {
+  background-image: url("https://imageresizer.static9.net.au/26XpQNN44W1uaFa4xNkcyWyO0QY=/1000x0/https%3A%2F%2Fprod.static9.net.au%2Ffs%2Fdfde5fcf-b07e-4b28-94a7-ed187e0db136");
+}
+
+.section:nth-child(5) {
+  background-image: url("https://images.hdqwalls.com/download/call-of-duty-black-ops-cold-war-usa-4k-v9-1024x768.jpg");
+}
+/*Footer*/
+body{
+  margin:0;
+  overflow-x:hidden;
+  }
+  
+  .footer{
+  background:#000;
+  padding:30px 0px;
+  font-family: 'Play', sans-serif;
+  text-align:center;
+  }
+  
+  .footer .row{
+  width:100%;
+  margin:1% 0%;
+  padding:0.6% 0%;
+  color:gray;
+  font-size:0.8em;
+  }
+  
+  .footer .row a{
+  text-decoration:none;
+  color:gray;
+  transition:0.5s;
+  }
+  
+  .footer .row a:hover{
+  color:#fff;
+  }
+  
+  .footer .row ul{
+  width:100%;
+  }
+  
+  .footer .row ul li{
+  display:inline-block;
+  margin:0px 30px;
+  }
+  
+  .footer .row a i{
+  font-size:2em;
+  margin:0% 1%;
+  }
+  
+  @media (max-width:720px){
+  .footer{
+  text-align:left;
+  padding:5%;
+  }
+  .footer .row ul li{
+  display:block;
+  margin:10px 0px;
+  text-align:left;
+  }
+  .footer .row a i{
+  margin:0% 3%;
+  }
+  }
+  /*button*/
+ 
+  
+  button, button::after {
+    position:relative;
+right:0px;
+top:150px;
+    width: 250px;
+    height: 60px;
+    font-size: 25px;
+    font-family: "Varela Round", sans-serif;
+    background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
+    border: 0;
+    color: #fff;
+    letter-spacing: 3px;
+    line-height: 50px;
+    box-shadow: 6px 0px 0px #000000;
+    outline: transparent;
+    position: relative;
+  }
+  
+  button::after {
+    --slice-0: inset(50% 50% 50% 50%);
+    --slice-1: inset(80% -6px 0 0);
+    --slice-2: inset(50% -6px 30% 0);
+    --slice-3: inset(10% -6px 85% 0);
+    --slice-4: inset(40% -6px 43% 0);
+    --slice-5: inset(80% -6px 5% 0);
+    
+    content: 'Press';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 3%, #000000 3%, #00E6F6 5%, #FF013C 5%);
+    text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #000000;
+    clip-path: var(--slice-0);
+  }
+  
+  button:hover::after {
+    animation: 1s glitch;
+    animation-timing-function: steps(2, end);
+  }
+  
+  @keyframes glitch {
+    0% {
+      clip-path: var(--slice-1);
+      transform: translate(-20px, -10px);
+    }
+    10% {
+      clip-path: var(--slice-3);
+      transform: translate(10px, 10px);
+    }
+    20% {
+      clip-path: var(--slice-1);
+      transform: translate(-10px, 10px);
+    }
+    30% {
+      clip-path: var(--slice-3);
+      transform: translate(0px, 5px);
+    }
+    40% {
+      clip-path: var(--slice-2);
+      transform: translate(-5px, 0px);
+    }
+    50% {
+      clip-path: var(--slice-3);
+      transform: translate(5px, 0px);
+    }
+    60% {
+      clip-path: var(--slice-4);
+      transform: translate(5px, 10px);
+    }
+    70% {
+      clip-path: var(--slice-2);
+      transform: translate(-10px, 10px);
+    }
+    80% {
+      clip-path: var(--slice-5);
+      transform: translate(20px, -10px);
+    }
+    90% {
+      clip-path: var(--slice-1);
+      transform: translate(-10px, 0px);
+    }
+    100% {
+      clip-path: var(--slice-1);
+      transform: translate(0);
+    }
+  }
+
+
+
+
